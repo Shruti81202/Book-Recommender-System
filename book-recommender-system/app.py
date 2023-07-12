@@ -2,10 +2,6 @@ import streamlit as st
 import pickle
 import numpy as np
 
-if not sys.warnoptions:
-    import warnings
-    warnings.simplefilter("ignore")
-
 popular_df = pickle.load(open('popular.pkl', 'rb'))
 pt = pickle.load(open('pt.pkl', 'rb'))
 books = pickle.load(open('books.pkl', 'rb'))
